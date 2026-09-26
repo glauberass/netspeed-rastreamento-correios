@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+TestResults/
+logs/
+saida/
+*.log
+
+# treinamento (Python)
+tools/treinamento/__pycache__/
+tools/treinamento/*.pt
+tools/treinamento/dados/tensores/
+tools/treinamento/.venv/

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Ferramenta de medição: roda o solver contra o portal real N vezes e informa a taxa de acerto
+    por tentativa. O próprio portal é o oráculo (aceita/recusa o texto), então não é preciso
+    rotular imagens à mão. As imagens aceitas são salvas como amostras rotuladas.
+  -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NetSpeed.Captcha\NetSpeed.Captcha.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\tessdata\**\*" Link="tessdata\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\modelos\*.onnx" Link="modelos\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

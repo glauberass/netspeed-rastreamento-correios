@@ -1,0 +1,140 @@
+{
+  "codigoObjeto": "NN437873753BR",
+  "consultadoEm": "2026-09-26T08:47:07.6892597-03:00",
+  "sucesso": true,
+  "erro": null,
+  "tipoPostal": "PACKET STANDARD IMPORTAÇÃO",
+  "previsaoEntrega": null,
+  "eventos": [
+    {
+      "status": "Objeto entregue ao destinatário",
+      "descricao": "Queremos te ouvir! Responda a uma pesquisa rápida e nos ajude a melhorar a sua experiência: https://survey3.medallia.com/?correios-nps-sms-sro&obj=NN437873753BR",
+      "dataHora": "2026-08-31T16:04:00",
+      "dataHoraOriginal": "31/08/2026 16:04",
+      "local": "Unidade de Distribuição, Sao Jose do Rio Preto - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Objeto saiu para entrega ao destinatário",
+      "descricao": "É preciso ter alguém no endereço para receber o carteiro",
+      "dataHora": "2026-08-31T09:22:00",
+      "dataHoraOriginal": "31/08/2026 09:22",
+      "local": "Sao Jose do Rio Preto - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Objeto em transferência - por favor aguarde",
+      "descricao": null,
+      "dataHora": "2026-08-28T08:52:00",
+      "dataHoraOriginal": "28/08/2026 08:52",
+      "local": null,
+      "origem": "Unidade de Tratamento, Sao Jose do Rio Preto - SP",
+      "destino": "Unidade de Distribuição, Sao Jose do Rio Preto - SP",
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Objeto em transferência - por favor aguarde",
+      "descricao": null,
+      "dataHora": "2026-08-26T20:58:00",
+      "dataHoraOriginal": "26/08/2026 20:58",
+      "local": null,
+      "origem": "Unidade de Logística Integrada, Valinhos - SP",
+      "destino": "Unidade de Tratamento, Sao Jose do Rio Preto - SP",
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Objeto em transferência - por favor aguarde",
+      "descricao": null,
+      "dataHora": "2026-08-26T09:11:00",
+      "dataHoraOriginal": "26/08/2026 09:11",
+      "local": null,
+      "origem": "Unidade de Logística Integrada, Valinhos - SP",
+      "destino": "Unidade de Tratamento, Sao Jose do Rio Preto - SP",
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Saída do Centro Internacional",
+      "descricao": "Objeto sem pendências de pagamentos e outras obrigações",
+      "dataHora": "2026-08-26T09:10:00",
+      "dataHoraOriginal": "26/08/2026 09:10",
+      "local": "Valinhos - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Pagamento confirmado",
+      "descricao": "Aguardando envio para o cliente",
+      "dataHora": "2026-08-26T08:40:00",
+      "dataHoraOriginal": "26/08/2026 08:40",
+      "local": "Valinhos - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Importação autorizada pela autoridade competente - aguardando pagamento",
+      "descricao": "Acesse o Minhas Importações para realizar o pagamento ou contestar a tributação https://portalimportador.correios.com.br",
+      "dataHora": "2026-08-23T11:05:00",
+      "dataHoraOriginal": "23/08/2026 11:05",
+      "local": "Valinhos - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Objeto recebido pelos Correios do Brasil",
+      "descricao": null,
+      "dataHora": "2026-08-21T10:09:00",
+      "dataHoraOriginal": "21/08/2026 10:09",
+      "local": "Valinhos - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Análise concluída - importação autorizada",
+      "descricao": "A autorização poderá ser revista pela autoridade aduaneira ou pelos órgãos anuentes. Acompanhe pelo Minhas Importações: https://portalimportador.correios.com.br",
+      "dataHora": "2026-08-17T11:26:00",
+      "dataHoraOriginal": "17/08/2026 11:26",
+      "local": "Valinhos - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Objeto postado",
+      "descricao": null,
+      "dataHora": "2026-08-16T23:13:00",
+      "dataHoraOriginal": "16/08/2026 23:13",
+      "local": "CHINA",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    },
+    {
+      "status": "Informações enviadas para análise da autoridade aduaneira/órgãos anuentes",
+      "descricao": "Acompanhe pelo Minhas Importações https://portalimportador.correios.com.br",
+      "dataHora": "2026-08-16T10:07:00",
+      "dataHoraOriginal": "16/08/2026 10:07",
+      "local": "Valinhos - SP",
+      "origem": null,
+      "destino": null,
+      "informacoesAdicionais": []
+    }
+  ],
+  "tentativasCaptcha": [
+    {
+      "numero": 1,
+      "texto": "tl9le",
+      "aceito": true,
+      "duracaoMs": 3984,
+      "observacao": null
+    }
+  ],
+  "duracaoMs": 9904
+}

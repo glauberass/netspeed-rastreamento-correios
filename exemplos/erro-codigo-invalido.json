@@ -1,0 +1,14 @@
+{
+  "codigoObjeto": "XX000",
+  "consultadoEm": "2026-09-25T19:44:40.5172433-03:00",
+  "sucesso": false,
+  "erro": {
+    "codigo": "codigoInvalido",
+    "mensagem": "Código de rastreamento inválido: 'XX000'. Formato esperado: AA123456789BR."
+  },
+  "tipoPostal": null,
+  "previsaoEntrega": null,
+  "eventos": [],
+  "tentativasCaptcha": [],
+  "duracaoMs": 0
+}

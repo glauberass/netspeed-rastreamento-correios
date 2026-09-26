@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Orquestração: prepara o contexto, dispara o pipeline, aplica retry e devolve o resultado.
+    É a única camada que conhece o PipelineController; os pipes não conhecem a Application.
+  -->
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Pipelining" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetSpeed.Domain\NetSpeed.Domain.csproj" />
+    <ProjectReference Include="..\NetSpeed.Captcha\NetSpeed.Captcha.csproj" />
+    <ProjectReference Include="..\NetSpeed.Pipelines\NetSpeed.Pipelines.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="NetSpeed.Tests" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Pipes e pipelines do robô, no padrão do RPA de produção (Pipelining): um start pipe que
+    compõe sub-pipes, um controller que registra o pipeline e um grupo de encerramento que roda
+    no finally.
+  -->
+
+  <ItemGroup>
+    <PackageReference Include="Pipelining" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetSpeed.Domain\NetSpeed.Domain.csproj" />
+    <ProjectReference Include="..\NetSpeed.Captcha\NetSpeed.Captcha.csproj" />
+    <ProjectReference Include="..\NetSpeed.Infrastructure\NetSpeed.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+<Project>
+
+  <!--
+    Configuração comum a todos os projetos da solution.
+    Centralizada aqui para que cada .csproj fique enxuto e as regras não divirjam entre projetos.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Warning vira erro: a build só passa se o código estiver limpo. -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest</AnalysisLevel>
+
+    <!--
+      NU1701: o pacote Pipelining 2.1.1 é publicado para .NET Framework e o NuGet avisa que
+      pode não ser compatível com net8.0. É a mesma versão usada no RPA de produção, e a
+      compatibilidade foi verificada: a biblioteca só depende de reflexão e System.Dynamic,
+      ambos presentes no .NET 8. O aviso é suprimido de forma consciente, não por conveniência
+      — sem isso ele viraria erro por causa do TreatWarningsAsErrors acima.
+    -->
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+
+    <!--
+      Globalização invariante fica desligada de propósito: os e-mails da Q9 formatam valores
+      em Real (pt-BR) e precisam dos dados de cultura do sistema.
+    -->
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!--
+    Segundo host sobre a mesma Application: o Executor dispara a consulta pela linha de comando;
+    este projeto a dispara por HTTP. Nada abaixo desta camada muda — e é esse o teste de que a
+    separação em camadas não é decoração.
+  -->
+
+  <PropertyGroup>
+    <RootNamespace>NetSpeed.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetSpeed.DependencyInjection\NetSpeed.DependencyInjection.csproj" />
+  </ItemGroup>
+
+</Project>

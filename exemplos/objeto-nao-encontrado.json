@@ -1,0 +1,22 @@
+{
+  "codigoObjeto": "AA123456789BR",
+  "consultadoEm": "2026-09-26T08:47:56.4801495-03:00",
+  "sucesso": false,
+  "erro": {
+    "codigo": "objetoNaoEncontrado",
+    "mensagem": "Período inválido"
+  },
+  "tipoPostal": null,
+  "previsaoEntrega": null,
+  "eventos": [],
+  "tentativasCaptcha": [
+    {
+      "numero": 1,
+      "texto": "awcs6v",
+      "aceito": true,
+      "duracaoMs": 800,
+      "observacao": "Período inválido"
+    }
+  ],
+  "duracaoMs": 4456
+}

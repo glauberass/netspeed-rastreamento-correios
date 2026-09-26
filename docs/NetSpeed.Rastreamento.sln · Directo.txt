@@ -1,0 +1,22 @@
+NetSpeed.Rastreamento.sln · Directory.Build.props (copiado do Smarthis) · .gitignore · README.md
+docs/ (decisoes-tecnicas.md, captcha-taxa-de-acerto.md)   exemplos/ (NN437873753BR.json)
+tessdata/eng.traineddata
+src/
+  NetSpeed.Domain            Modelos (RastreamentoResultado, EventoRastreamento), AppSettings, exceções tipadas,
+                             portas: ICaptchaSolver, IPortalCorreios, IParserRastreamento, IExportadorJson
+  NetSpeed.Captcha           ImagePreprocessor + TesseractCaptchaSolver (isolado; só recebe byte[] e devolve texto)
+                             + CaptchaTentativa (registro de tentativas/resultados)
+  NetSpeed.Infrastructure    Selenium: CorreiosPortal (navegar, obter imagem via canvas.toDataURL, preencher, refresh,
+                             consultar), HtmlParser do rastro (DOM → eventos), ExportadorJson, RetryPolicy
+  NetSpeed.Application       RastreamentoService (orquestra multi-objeto/async), PipelineService, ExpandoContextBuilder,
+                             middleware de log
+  NetSpeed.PipelineComum     FinalizarChrome (finally), QuestaoStartPipe-equivalente (base com try/catch/cronômetro)
+  NetSpeed.PipelineRastreamento  Pipes: AbrirChrome → NavegarPortal → QuebrarCaptcha(loop retry) → Consultar →
+                             ExtrairEventos → MontarJson
+  NetSpeed.PipelineController    Registro do pipeline (igual ao Smarthis)
+  NetSpeed.DependencyInjection   AddServices (ServiceCollection, Serilog, AppSettings)
+  NetSpeed.Executor          CLI: `--codigo NN437873753BR [--codigo …] [--arquivo lista.txt] [--saida out.json] [--headless]`
+  NetSpeed.Web               Minimal API: POST /api/rastreamentos (async, retorna jobId), GET /api/rastreamentos/{id};
+                             wwwroot com formulário simples
+tests/NetSpeed.Tests         xUnit: parser (HTML fixture), pré-processamento/solver com imagens de amostra,
+                             retry/timeout com fakes, serialização JSON, validação do código (regex AA123456789BR)
